@@ -16,6 +16,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.14.2
+        # CRITICAL: Replace 'gokulsagale143' with your actual Docker Hub username
+        image: gokulsagale143/nginx-app:IMAGE_TAG
         ports:
         - containerPort: 80
+        imagePullPolicy: Always
